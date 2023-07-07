@@ -20,7 +20,7 @@ export default createStore({
   actions: {
   getTestimonials: async (context) => {
     try {
-      const response = await fetch("http://localhost:3000/testimonials");
+      const response = await fetch("https://vue.github.io/data/index.json");
       const testimonials = await response.json();
       context.commit("setTestimonials", testimonials);
     } catch (error) {
@@ -30,7 +30,7 @@ export default createStore({
 
   getProjects: async (context) => {
     try {
-      const response = await fetch("http://localhost:3000/projects");
+      const response = await fetch("https://vue.github.io/data/index.json");
       if (!response.ok) {
         throw new Error("Failed to fetch projects");
       }
@@ -42,7 +42,7 @@ export default createStore({
   },
   getTimelines: async (context) => {
     try {
-      const response = await fetch("http://localhost:3000/timelines");
+      const response = await fetch("https://vue.github.io/data/index.json");
       if (!response.ok) {
         throw new Error("Failed to fetch timelines");
       }
