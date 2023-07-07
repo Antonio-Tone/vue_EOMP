@@ -213,7 +213,7 @@ export default {
 
 .learn{
   font-size: 40px;
-  color: #3498db;
+  color: #aed5d6;
   
 }
 .intro,
